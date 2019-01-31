@@ -1,0 +1,173 @@
+::-webkit-scrollbar {
+display: none;
+}
+#vertText{
+  writing-mode: vertical-lr;
+  direction: rtl;
+  width:1%;
+  background:;
+  font-family: 'Gloria Hallelujah', cursive;
+   left:0px;
+   color:white;
+
+}
+#vertText2{
+  writing-mode: vertical-lr;
+  direction: rtl;
+  width:1%;
+  background:;
+  font-family: 'Gloria Hallelujah', cursive;
+   right:20px;
+   top:0px;
+   position: absolute;
+   color:white;
+
+}
+.nav{
+  width:100%;
+  background-color: black;
+  height:60px;
+  opacity: 0.9;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+  0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; top: 25%;}
+  50%  {background: blue; top: 50%;}
+  75%  {background: green;  top: 75%;}
+  100% {background: red; top: 100%;}
+}
+
+@keyframes myfirst {
+  0%   {left: 0px; top: 0px;}
+
+  100% {left: 0px; top: 500px;}
+}
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+#facebook{
+  transition: all 1.0s
+}
+#twitter{
+  transition: all 1.0s
+}
+#btncontainer{
+  transition: all 1.0s;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color:#FFFFFF;
+  margin: 10px 10px;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.ham{
+  position:absolute;
+  right:0px;
+}
+.heading{
+  margin: 0 auto;
+  color:white;
+  font-family: 'Luckiest Guy', cursive;
+
+}
+.events{
+  width: 50%;
+  height: 60%;
+  background-color: #D9D9D9;
+  left:70px;
+  position: absolute;
+  top: 60px;
+}
+.highlights{
+  width:45%;
+  height:40%;
+  background-color: #EEECEA;
+  left:55%;
+  top:60px;
+  position:absolute;
+}
+.Banner{
+  width:50%;
+  height:35%;
+  background-color: #CABA9F;
+  left:70px;
+  top:65%;
+  position: absolute;
+  text-align: center;
+}
+.video{
+  width:45%;
+  height:50%;
+  left:55%;
+  top:50%;
+  position:absolute;
+}
+.desc1{
+  background-image: url(trailer_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  height:500px;
+  color:#181E00;
+}
+.fixed-background {
+    background-image: url("http://sites.psu.edu/nidzynrclblog1314/wp-content/uploads/sites/4984/2013/09/nicky-romero-crowd-hd-wallpaper-picture-ultra-music-fest-2013-wmc-miami.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#register{
+  background-color: #F2A900;
+  border:none;
+  width: 100px;
+  height:50px;
+  border-radius: 20%;
+  font-family: 'Luckiest Guy', cursive;  outline: none;
+  box-shadow: 2px 2px 2px 2px black;
+  transition: all 2.0s;
+
+}
+.imagepir{
+  position:relative;
+  padding:0px;
+  margin:0px;
+
+}
