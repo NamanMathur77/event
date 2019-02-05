@@ -145,7 +145,7 @@ display: none;
   color:#181E00;
 }
 .fixed-background {
-    background-image: url("http://sites.psu.edu/nidzynrclblog1314/wp-content/uploads/sites/4984/2013/09/nicky-romero-crowd-hd-wallpaper-picture-ultra-music-fest-2013-wmc-miami.jpg");
+    background-image: url("back.jpg");
     min-height: 300px;
     background-attachment: fixed;
     background-position: center;
@@ -172,7 +172,7 @@ display: none;
 }
 .eventsbtn{
   background-color: #036;
-  -webkit-mask-image: url(https://www.epicurrence.com/static/images/circle.webp);
+  -webkit-mask-image: url(circle.webp);
   -webkit-mask-size: 100%;
   height:300px;
   width:300px;
@@ -187,7 +187,7 @@ display: none;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: lighten;
-  -webkit-mask-image: url(https://www.epicurrence.com/static/images/circle.webp);
+  -webkit-mask-image: url(circle.webp);
   -webkit-mask-size: 100%;
   height:500px;
   width:500px;
