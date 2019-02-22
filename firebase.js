@@ -1,4 +1,3 @@
-<script>
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyDKwZMXXtpkbGLKjNIJgVYZ3TPXX4CjB6A",
@@ -9,4 +8,54 @@
     messagingSenderId: "941173824400"
   };
   firebase.initializeApp(config);
-</script>
+  const txtEmail=document.getElementById('txtEmail');
+const txtPassword=document.getElementById('txtPassword');
+const btnLogin=document.getElementById('btnLogin');
+const btnSignUp=document.getElementById('btnSignUp');
+const btnLogout=document.getElementById('btnLogout');
+const verify=document.getElementById('verification');
+//add login event
+
+btnLogin.addEventListener('click',e=>{
+  const email=txtEmail.value;
+  const pass=txtPassword.value;
+  const auth=firebase.auth();
+  //Sign in
+  const promise=auth.signInWithEmailAndPassword(email,pass);
+  promise.catch(e => console.log(e.message));
+
+});
+  //Sign up
+  btnSignUp.addEventListener('click',e=>{
+    const email=txtEmail.value;
+    const pass=txtPassword.value;
+    const auth=firebase.auth();
+    const promise=auth.createUserWithEmailAndPassword(email,pass);
+    promise.catch(e => console.log(e.message));
+  });
+
+  //Add realtiime addEventListener
+  firebase.auth().onAuthStateChanged(firebaseUser=>{
+    if(firebaseUser){
+      console.log(firebaseUser);
+    }
+    else{
+      console.log('not logged in');
+    }
+  });
+
+  //log out
+  btnLogout.addEventListener('click',e=>{
+    firebase.auth().signOut();
+  });
+  //verification
+  verify.addEventListener('click',e=>{
+    var user = firebase.auth().currentUser;
+
+user.sendEmailVerification().then(function() {
+  // Email sent.
+}).catch(function(error) {
+  // An error happened.
+});
+
+});
